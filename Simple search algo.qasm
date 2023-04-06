@@ -1,3 +1,13 @@
+/*
+Code for a simple search algorithm. 
+The circuit is taken from p. 257 of "Nielsen and Chuang"
+The code searches for 3 in a list of numbers 0, 1, 2, 3.
+In particular, given the input |000>,
+the circuit outputs |111>.
+The first two q-bits (i.e. the two right-most qbits in the bra-ket notation)
+denote the answer (i.e. 3) and the last q-bit
+is an oracle q-bit.
+*/
 OPENQASM 2.0;
 include "qelib1.inc";
 qreg q[3];
